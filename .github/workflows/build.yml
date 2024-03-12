@@ -38,7 +38,7 @@ jobs:
       - name: Build xcframework
         working-directory: opencv
         env:
-          IPHONEOS_DEPLOYMENT_TARGET: 12.0
+          IPHONEOS_DEPLOYMENT_TARGET: 15.2
           MACOSX_DEPLOYMENT_TARGET: 10.13
         run: |
           git apply $GITHUB_WORKSPACE/opencv-spm/opencv.patch
